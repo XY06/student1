@@ -8,7 +8,7 @@ form, fieldset, legend, button, input, textarea, /* form elements 表单元素 *
 th, td, /* table elements 表格元素 */
 body{
 background: #F5F5F5;
-background:url(img1/dd.jpg)no-repeat;
+/*background:url(img1/dd.jpg)no-repeat;*/
 }
 form{
 	margin-top: 0px;

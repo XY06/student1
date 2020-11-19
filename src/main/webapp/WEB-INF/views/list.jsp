@@ -7,10 +7,31 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Insert title here</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <%--<link rel="stylesheet" type="text/css" href="css/index.css">--%>
     <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+    <style type="text/css">
+        .li1{
+            float: left;
+            list-style: none;
+            margin-left: 10px;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+<div style="width: 1440px;height: 662px;background: url(css/img1/6.png)no-repeat;position: absolute;margin-left: 700px;">
+    <%--<img src="css/img1/2.jpg" style="margin-left: 80px;margin-top: 3px;">--%>
+    <ul style="margin-left: 830px;">
+        <li class="li1">主页</li>
+        <li class="li1">关于我们</li>
+        <li class="li1">登录</li>
+    </ul>
+    <div style="margin-left: 578px;margin-top: 244px;color: white;">
+        <span style="text-align: center">学生岗位<br>致力于学生就业网站<br>为学生和企业工作</span><br>
+        <%--<span>致力于学生就业网站</span><br>
+        <span>为学生和企业工作</span>--%>
+    </div>
+</div>
 
 <table>
     <tr>
