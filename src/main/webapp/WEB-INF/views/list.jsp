@@ -26,10 +26,10 @@
         <li class="li1">关于我们</li>
         <li class="li1">登录</li>
     </ul>
-    <div style="margin-left: 578px;margin-top: 244px;color: white;">
-        <span style="text-align: center">学生岗位<br>致力于学生就业网站<br>为学生和企业工作</span><br>
-        <%--<span>致力于学生就业网站</span><br>
-        <span>为学生和企业工作</span>--%>
+    <div style="margin-left: 490px;margin-top: 200px;color: white;">
+        <span style="text-align: center;font-size: 20px;margin-left: 20px">学生岗位</span><br>
+        <span style="text-align: center;font-size: 18px;">致力于学生就业网站</span><br>
+        <span style="text-align: center;font-size: 18px;">为学生和企业工作</span>
     </div>
 </div>
 
