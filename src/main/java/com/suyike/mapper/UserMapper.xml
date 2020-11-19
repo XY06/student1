@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 对应的是接口的全名 -->
+<mapper namespace="com.suyike.mapper.UserMapper">
+    <select id="list" resultType="com.suyike.bean.user">
+        select * from user
+    </select>
+    <insert id="addUser" parameterType="com.suyike.bean.user">
+        insert into user (id,user,username,password,sex,phone,shenfen,adddate)values (null,#{user},#{username},#{password},null,#{phone},#{shenfen},#{adddate})
+    </insert>
+    <select id="selectbyUser" resultType="com.suyike.bean.user">
+        select * from user
+        where
+        <if test="user!=null and user!=''">
+            user= #{user}
+        </if>
+    </select>
+</mapper>
