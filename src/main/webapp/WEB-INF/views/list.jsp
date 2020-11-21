@@ -19,21 +19,45 @@
     </style>
 </head>
 <body>
-<div style="width: 1440px;height: 662px;background: url(css/img1/6.png)no-repeat;position: absolute;margin-left: 700px;">
+<div style="width: 1440px;height: 1332px;background: url(css/img1/6.png)no-repeat;position: absolute;margin-left: 700px;">
     <%--<img src="css/img1/2.jpg" style="margin-left: 80px;margin-top: 3px;">--%>
     <ul style="margin-left: 830px;">
         <li class="li1">主页</li>
         <li class="li1">关于我们</li>
         <li class="li1">登录</li>
     </ul>
-    <div style="margin-left: 490px;margin-top: 200px;color: white;">
-        <span style="text-align: center;font-size: 20px;margin-left: 20px">学生岗位</span><br>
-        <span style="text-align: center;font-size: 18px;">致力于学生就业网站</span><br>
-        <span style="text-align: center;font-size: 18px;">为学生和企业工作</span>
+    <div style="margin-left: 490px;margin-top: 200px;color: white;width: 280px;height: 136px;">
+        <span style="text-align: center;font-size: 30px;margin-left: 20px">学生岗位</span><br>
+        <span style="text-align: center;font-size: 25px;margin-left: -30px;">致力于学生就业网站</span><br>
+        <span style="text-align: center;font-size: 25px;margin-left: -10px;">为学生和企业工作</span><br><br><br>
+        <input type="button" value="注册" style="width: 100px;height: 30px;margin-left: -60px;" onclick="zhuce()">
+        <input type="button" value="登录" style="width: 100px;height: 30px;margin-left: 100px;" onclick="denglu()">
+        <input type="text" style="width: 650px; height: 27px; margin-left: -370px;margin-top: 30px;">
+        <input type="button" value="搜索" style="float: left;margin-left: 300px;margin-top: -33px;width: 100px;height: 30px;background-color: #03A9F4;color: white">
     </div>
+    <ul style="margin-top: 180px;margin-left: 0px;">
+        <li style="list-style: none;float: left">
+            <img src="css/img1/7.jpg" alt="" style="width: 273px;height: 264px;">
+            <div style="width: 269px;height: 198px;">
+                <h2 style="margin-left: 100px;margin-top: 30px;">大学生</h2>
+            </div>
+        </li>
+        <li style="list-style: none;float: left;margin-left: 80px;">
+            <img src="css/img1/4.jpg" alt="" style="width: 273px;height: 264px;">
+            <div style="width: 269px;height: 198px;">
+                <h2 style="margin-left: 110px;margin-top: 30px;">企业</h2>
+            </div>
+        </li>
+        <li style="list-style: none;float: left;margin-left: 80px;">
+            <img src="css/img1/6.jpg" alt="" style="width: 273px;height: 264px;">
+            <div style="width: 269px;height: 198px;">
+                <h2 style="margin-left: 110px;margin-top: 30px;">平台</h2>
+            </div>
+        </li>
+    </ul>
 </div>
 
-<table>
+<%--<table>
     <tr>
         <td>
             全选
@@ -57,13 +81,20 @@
             </td>
         </tr>
     </c:forEach>
-    <%--<form action="file/upload" method="post" enctype="multipart/form-data">
+    &lt;%&ndash;<form action="file/upload" method="post" enctype="multipart/form-data">
         <input type="file" name="file"/> <br>
         <input type="submit" value="上传"/>
     </form>
-    <a href="/file/download">文件下载</a>--%>
-</table>
+    <a href="/file/download">文件下载</a>&ndash;%&gt;
+</table>--%>
 <script type="text/javascript">
+    function denglu() {
+        location.href="denglu";
+    }
+    function zhuce() {
+        location.href="zhuce";
+    }
+
     function toadd() {
         location.href="toadd";
     }

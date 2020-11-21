@@ -16,7 +16,8 @@
 <body>
 <form>
     <div style="margin-left: 800px;font-weight: bold;margin-top:150px;font-size: 30px;width: 700px;height: 500px;border-bottom: #b81900;border: 1px solid;">
-        <table style="width: 600px;height: 400px;margin-left: 50px;">
+        <img src="css/img1/2.jpg" style="margin-left: 300px;">
+        <table style="width: 600px;height: 400px;margin-left: 50px;margin-left: 100px;margin-top: -10px;">
             <tr style="margin-left: 20px">
                 <td>用户名</td>
                 <td><input type="text" name="user"></td>
