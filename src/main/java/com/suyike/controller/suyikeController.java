@@ -1,6 +1,8 @@
 package com.suyike.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.suyike.bean.user;
+import com.suyike.page.ResultMsg;
 import com.suyike.service.suyikeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -61,6 +63,15 @@ public class suyikeController {
         mv.addObject("list",list);
         mv.setViewName("list");
         return mv;
+    }
+
+    @RequestMapping("list1")
+    @ResponseBody
+    public String list1(){
+        List list = suyikeService.list();
+        ResultMsg msg = new ResultMsg(200,"success");
+        msg.getExtenal().put("list",list);
+        return JSON.toJSONString(msg);
     }
     @RequestMapping("guanyu")
     public String guanyu(){
